@@ -1,3 +1,1 @@
-import Modelo from './Modelo';
-
-export default Modelo;
+export { default as Modelo } from './modelo.js'
