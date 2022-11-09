@@ -11,24 +11,22 @@ app.use(function(req,res,next) {
 const marcaData = [
     { id: 1, name: 'Código', 
     programs: [
-        {id:1, name: '78532672'}
-        {id:2, name: '78328743'}
-        {id:3, name: '78238742'}
-        {id:4, name: '78298498'}
+        {id:1, name: '1'},
+        {id:2, name: '2'},
+        {id:3, name: '3'}
     ]},
     { id: 2, name: 'Nombre',
     programs: [
-        {id:5, name: 'Psicologia'}
-        {id:6, name: 'Psicologia'}
-        {id:7, name: 'Psicologia'}
+        {id:4, name: 'Nissan'},
+        {id:5, name: 'Chevrolet'},
+        {id:6, name: 'BMW'}
     ]},
     { id: 3, name: 'País de origen',
     programs: [
-        {id:8, name: 'Alemania'},
-        {id:9, name: 'Rusia'},
-        {id:10, name: 'Arquitectura'},
-    ]
-    }
+        {id:7, name: 'Japón'},
+        {id:8, name: 'Estados Unidos'},
+        {id:9, name: 'Alemania'},
+    ]}
 ]
 
 app.get('/marca', (req,res,next)=> {
