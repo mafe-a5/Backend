@@ -1,4 +1,4 @@
-const modelos = [
+const modelo = [
     {"id": 1,"Nombre": "Tiida", "año": 2022, "CodigoMarca": "1", "NombrePais": "Japón"},
     {"id": 2,"Nombre": "Sentra", "año": 2022, "CodigoMarca": "1", "NombrePais": "Japón"},
     {"id": 3,"Nombre": "Note", "año": 2020, "CodigoMarca": "1", "NombrePais": "Japón"},
@@ -10,15 +10,15 @@ const modelos = [
 ]
 
 const getAll = () => {
-    return modelo
+    return Modelo
 }
 
 const insert = (ndata) => {
-    modelo.push(ndata)
+    Modelo.push(ndata)
 }
 
 const findOne = (id) => {
-    return modelo.find( x => x.id === id )
+    return Modelo.find( x => x.id === id )
 }
 
 const Modelo = { getAll, insert, findOne }

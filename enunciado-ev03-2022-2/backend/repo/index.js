@@ -1,2 +1,2 @@
-export { default as MarcasService } from './marca.js'
-export { default as ModelosService } from './modelo.js'
+export { default as MarcaService } from './marca.js'
+export { default as ModeloService } from './modelo.js'
