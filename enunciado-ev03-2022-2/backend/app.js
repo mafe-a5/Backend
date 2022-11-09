@@ -8,26 +8,31 @@ app.use(function(req,res,next) {
     next();
 })
 
-const facultyData = [
-    { id: 1, name: 'Facultad de Derecho', 
+const marcaData = [
+    { id: 1, name: 'Código', 
     programs: [
-        {id:1, name: 'Derecho'}
+        {id:1, name: '78532672'}
+        {id:2, name: '78328743'}
+        {id:3, name: '78238742'}
+        {id:4, name: '78298498'}
     ]},
-    { id: 2, name: 'Facultad de Psicología',
+    { id: 2, name: 'Nombre',
     programs: [
-        {id:2, name: 'Psicologia'}
+        {id:5, name: 'Psicologia'}
+        {id:6, name: 'Psicologia'}
+        {id:7, name: 'Psicologia'}
     ]},
-    { id: 3, name: 'Facultad de Ingeniería y Arquitectura',
+    { id: 3, name: 'País de origen',
     programs: [
-        {id:3, name: 'Ingeniería Civil'},
-        {id:4, name: 'Ingeniería de Sistemas'},
-        {id:5, name: 'Arquitectura'},
+        {id:8, name: 'Alemania'},
+        {id:9, name: 'Rusia'},
+        {id:10, name: 'Arquitectura'},
     ]
     }
 ]
 
-app.get('/faculty', (req,res,next)=> {
-    return res.json(facultyData);
+app.get('/marca', (req,res,next)=> {
+    return res.json(marcaData);
 })
 
 app.get('/',(req, res, next)=> {
